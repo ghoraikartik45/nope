@@ -1,0 +1,60 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+#calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 10px; /* Adjust border radius for a card-like appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    max-width: 300px; /* Adjust maximum width for the card */
+    overflow: hidden;
+}
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 2rem; /* Adjust font size */
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    display: flex;
+}
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 15px;
+}
+
+button {
+    width: 100%;
+    height: 50px; /* Adjust button height for a card-like appearance */
+    border-radius: 5px; /* Adjust button border radius */
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 1.5rem; /* Adjust button font size */
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color:   hsl(0, 0%, 40%);
+}
+button:active{
+    background-color:   hsl(0, 0%, 60%);
+}
+.operator{
+    background-color: rgb(197, 145, 49);
+}
+.operator:hover{
+    background-color: rgb(173, 139, 77);
+}
+.operator:active{
+    background-color: rgb(231, 154, 12);
+}
